@@ -1,0 +1,542 @@
+{
+  "pages": [
+    {
+      "title": "Main",
+      "groups": [
+        {
+          "type": "group",
+          "title": "General",
+          "children": [
+            {
+              "type": "bookmark",
+              "title": "Self Service Portal",
+              "url": "https://servicedesk.omicron.at/wm/app-SelfServicePortal/search-page/6cac2957-1ae1-e511-dd9b-74d02b9d869c/structure/"
+            },
+            {
+              "type": "bookmark",
+              "title": "Outlook",
+              "url": "https://outlook.office.com/mail/inbox/id/AAQkAGY0ZGVhODA4LTZhZDQtNDgxOC1iYjRjLWI1YzBjOWE4MTQzMwAQACRHQ6J8mzxLp8CzqDuI%2BwA%3D?realm=omicronenergy.com&exsvurl=1&ll-cc=1033&modurl=0&url=%2fowa%2f%3frealm%253domicronenergy.com%2526exsvurl%253d1%2526ll-cc%253d1033%2526modurl%253d0%2526login_hint%253dstephen.renwick%252540omicronenergy.com"
+            },
+            {
+              "type": "bookmark",
+              "title": "TimeTac",
+              "url": "https://go.timetac.com/omicron"
+            },
+            {
+              "type": "bookmark",
+              "title": "Home - Intranet",
+              "url": "https://o3.sharepoint.com/sites/intranet"
+            },
+            {
+              "type": "bookmark",
+              "title": "Dashboard - Confluence",
+              "url": "https://confluence.omicron.at/"
+            },
+            {
+              "type": "bookmark",
+              "title": "Room Control",
+              "url": "https://roomcontrol.omicron.at/map/index.php"
+            },
+            {
+              "type": "bookmark",
+              "title": "Introduction Stephen Renwick - PUC Innovation - Confluence",
+              "url": "https://confluence.omicron.at/display/PI/Introduction+Stephen+Renwick"
+            },
+            {
+              "type": "bookmark",
+              "title": "Abbreviations - Abbreviation Database",
+              "url": "https://o3.sharepoint.com/sites/apps/abbreviations/Lists/Abbreviation%20Database/AllItems.aspx"
+            },
+            {
+              "type": "bookmark",
+              "title": "ChatGPT",
+              "url": "https://chatgpt.com/"
+            },
+            {
+              "type": "bookmark",
+              "title": "Microsoft 365 Copilot Chat",
+              "url": "https://m365.cloud.microsoft/chat?auth=2"
+            },
+            {
+              "type": "bookmark",
+              "title": "Meeting Rooms",
+              "url": "https://o3.sharepoint.com/sites/intranet-work/SitePages/Meeting-Rooms-Global.aspx?web=1"
+            },
+            {
+              "type": "bookmark",
+              "title": "LF Energy Session",
+              "url": "https://sessionize.com/app/speaker"
+            },
+            {
+              "type": "bookmark",
+              "title": "EcoPoints",
+              "url": "https://www.ecopoints.at/"
+            },
+            {
+              "type": "group",
+              "title": "Agile",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "How to use Story Points in Agile (step-by-step guide) | Planio",
+                  "url": "https://plan.io/blog/how-to-use-story-points-in-agile/"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "Agile Estimation Techniques for a Software Project [2023 Update]",
+                  "url": "https://bambooagile.eu/insights/agile-estimation-techniques"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "bookmark",
+          "title": "GH ORG",
+          "url": "https://github.com/OMICRONEnergyOSS"
+        },
+        {
+          "type": "group",
+          "title": "OpenSCD",
+          "children": [
+            {
+              "type": "bookmark",
+              "title": "OpenSCD - Confluence",
+              "url": "https://confluence.omicron.at/display/OSCL"
+            },
+            {
+              "type": "bookmark",
+              "title": "Sharepoint",
+              "url": "https://o3.sharepoint.com/sites/2024059"
+            },
+            {
+              "type": "bookmark",
+              "title": "Orchestry Dashboard",
+              "url": "https://o3.sharepoint.com/sites/teamwork#/groups"
+            },
+            {
+              "type": "bookmark",
+              "title": "Zulip",
+              "url": "https://openscd.zulipchat.com/#narrow/channel/447335-general"
+            },
+            {
+              "type": "group",
+              "title": "oscd-diff",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "Excalidraw - oscd-diff",
+                  "url": "https://excalidraw.com/#room=5947404235014397192c,eQSVmfb7am9BOVqjzWFO3w"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "title": "distros",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "OpenSCD Transpower Distribution",
+                  "url": "https://transpower-nz.github.io/open-scd/"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "Meinberg ICT",
+                  "url": "https://meinberg-sync.github.io/mbg-open-scd/"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "OpenSCD",
+                  "url": "https://openscd.github.io/"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "SprintEins OpenSCD",
+                  "url": "https://openscd.sprinteins.com/"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "CoMPAS - (Co)nfiguration (M)odules for (P)ower industry (A)utomation (S)ystems",
+                  "url": "https://github.com/com-pas"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "CoMPAS - OpenSCD",
+                  "url": "https://demo.compas.energy/"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "OpenEnergyTools",
+                  "url": "https://openenergytools.github.io/scl-editor/"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "Academy Distro",
+                  "url": "https://omicronenergyoss.github.io/oscd-academy/"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "JakVogDistro",
+                  "url": "https://jakobvogelsang.github.io/demo-scl-editor/"
+                }
+              ]
+            },
+            {
+              "type": "bookmark",
+              "title": "New Issue",
+              "url": "https://github.com/OMICRONEnergyOSS/oscd-shell/issues/new"
+            },
+            {
+              "type": "group",
+              "title": "related",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "Engineering Base",
+                  "url": "https://www.aucotec.com/en/engineering-base"
+                }
+              ]
+            },
+            {
+              "type": "bookmark",
+              "title": "Omicron Acadamy Distro",
+              "url": "https://confluence.omicron.at/spaces/OSCL/pages/328261166/Omicron+Acadamy+Distro"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "libs",
+          "children": [
+            {
+              "type": "bookmark",
+              "title": "oscd-ui ⋅ Storybook",
+              "url": "https://omicronenergyoss.github.io/oscd-ui/?path=/docs/open-scd-overview--docs"
+            },
+            {
+              "type": "bookmark",
+              "title": "Material Symbols & Icons - Google Fonts",
+              "url": "https://fonts.google.com/icons?selected=Material+Symbols+Outlined:content_copy:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=duplicate&icon.size=24&icon.color=%235f6368"
+            },
+            {
+              "type": "bookmark",
+              "title": "Material Web",
+              "url": "https://material-web.dev/about/intro/"
+            },
+            {
+              "type": "bookmark",
+              "title": "What is Lit? – Lit",
+              "url": "https://lit.dev/docs/"
+            },
+            {
+              "type": "bookmark",
+              "title": "Github - material wc components",
+              "url": "https://github.com/stee-re/material-web"
+            },
+            {
+              "type": "bookmark",
+              "title": "Github - depricated-mwc",
+              "url": "https://github.com/stee-re/depricated-mwc/tree/master/packages/mdc-drawer"
+            },
+            {
+              "type": "bookmark",
+              "title": "Solarized",
+              "url": "https://ethanschoonover.com/solarized/"
+            },
+            {
+              "type": "group",
+              "title": "cli",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "Orion-Labs-LLC/dev-toolkit",
+                  "url": "https://github.com/Orion-Labs-LLC/dev-toolkit/tree/main/packages/ts-tooling/src"
+                }
+              ]
+            },
+            {
+              "type": "bookmark",
+              "title": "Reuse workflows - GitHub Docs",
+              "url": "https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows"
+            },
+            {
+              "type": "bookmark",
+              "title": "Clarity Design System",
+              "url": "https://clarity.design/"
+            },
+            {
+              "type": "group",
+              "title": "articles",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "How to make a resizable panel control with Web Components - DEV Community",
+                  "url": "https://dev.to/ndesmic/how-to-make-a-resizable-panel-control-with-web-components-2cpa"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "readme",
+          "children": [
+            {
+              "type": "bookmark",
+              "title": "Forking Workflow | Atlassian Git Tutorial",
+              "url": "https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow"
+            },
+            {
+              "type": "bookmark",
+              "title": "Conventional Commits",
+              "url": "https://www.conventionalcommits.org/en/v1.0.0/"
+            },
+            {
+              "type": "group",
+              "title": "linux",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "Ultra BASH Prompt",
+                  "url": "https://christitus.com/mybash/"
+                }
+              ]
+            },
+            {
+              "type": "bookmark",
+              "title": "Becoming a CSS Grid Ninja!",
+              "url": "https://elad.medium.com/becoming-a-css-grid-ninja-f4c6db018cc1"
+            },
+            {
+              "type": "bookmark",
+              "title": "Nonviolent Communication - San Francisco Lecture Workshop - Marshall Rosenberg *Synced sound* - YouTube",
+              "url": "https://www.youtube.com/watch?v=NH1MKAdxUpQ"
+            },
+            {
+              "type": "group",
+              "title": "storybook",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "Documenting Web Components With Storybook | James Ives",
+                  "url": "https://jamesiv.es/blog/frontend/javascript/2025/02/19/documenting-web-components-with-storybook"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "GitHub",
+          "children": [
+            {
+              "type": "group",
+              "title": "OMICRONEnergyOSS",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "Repositories",
+                  "url": "https://github.com/orgs/OMICRONEnergyOSS/repositories"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "oscd-api",
+                  "url": "https://github.com/OMICRONEnergyOSS/oscd-api"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "oscd-ui",
+                  "url": "https://github.com/OMICRONEnergyOSS/oscd-ui"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "oscd-test-utils",
+                  "url": "https://github.com/OMICRONEnergyOSS/oscd-test-utils"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "oscd-shell",
+                  "url": "https://github.com/OMICRONEnergyOSS/oscd-shell"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "oscd-diff",
+                  "url": "https://github.com/OMICRONEnergyOSS/oscd-diff"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "xml-lib",
+                  "url": "https://github.com/OMICRONEnergyOSS/xml-lib"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "openscd-org-website",
+                  "url": "https://github.com/openscd/openscd-org-website"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "title": "OpenEnergyTools",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "Repositories",
+                  "url": "https://github.com/orgs/OpenEnergyTools/repositories"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "LEGACY open-scd-core",
+                  "url": "https://github.com/OpenEnergyTools/open-scd-core"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "LEGACY xml-lib",
+                  "url": "https://github.com/OpenEnergyTools/xml-lib"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "scl-editor (scoped)",
+                  "url": "https://github.com/OpenEnergyTools/scl-editor/tree/scl-editor-with-scoped-custom-registry"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "title": "stee-re",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "Repositories",
+                  "url": "https://github.com/stee-re?tab=repositories"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "openscd-org-website",
+                  "url": "https://github.com/stee-re/openscd-org-website"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "oscd-diff",
+                  "url": "https://github.com/stee-re/oscd-diff"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "open-scd-core",
+                  "url": "https://github.com/stee-re/open-scd-core"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "title": "ca-d",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "oscd-diff",
+                  "url": "https://github.com/ca-d/oscd-diff"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "title": "openscd",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "repositories",
+                  "url": "https://github.com/orgs/openscd/repositories"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "oscd-api",
+                  "url": "https://github.com/openscd/oscd-api"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "openscd/scl-template-update",
+                  "url": "https://github.com/openscd/scl-template-update"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "openscd/oscd-template-generator",
+                  "url": "https://github.com/openscd/oscd-template-generator"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "title": "JakobVogelsang",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "Repositories",
+                  "url": "https://github.com/JakobVogelsang?tab=repositories"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "title": "scoped-material",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "material-web",
+                  "url": "https://github.com/scoped-material/material-web"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "title": "Compas",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "compas-open-scd",
+                  "url": "https://github.com/com-pas/compas-open-scd"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "repositories",
+                  "url": "https://github.com/orgs/com-pas/repositories"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "title": "Transpower NZ",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "all repositories",
+                  "url": "https://github.com/orgs/transpower-nz/repositories"
+                },
+                {
+                  "type": "bookmark",
+                  "title": "open-scd (distro)",
+                  "url": "https://github.com/transpower-nz/open-scd"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "title": "danyill",
+              "children": [
+                {
+                  "type": "bookmark",
+                  "title": "all repositories",
+                  "url": "https://github.com/danyill?tab=repositories"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "bookmark",
+          "title": "Planning",
+          "url": "https://github.com/orgs/OMICRONEnergyOSS/projects/2"
+        }
+      ]
+    }
+  ]
+}

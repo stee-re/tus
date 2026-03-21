@@ -30,7 +30,6 @@ We all need bookmarks and browsers to a pretty good job of managing all these bo
 - Import Chrome & Firefox bookmarks
 - Navigate links directly from Search
 - Multi-page support
-- Nested groups
 - Edit mode with drag & drop
 - Custom icon selection
 - Dark mode

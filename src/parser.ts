@@ -1,50 +1,86 @@
-export function parseBookmarksHtml(html: string) {
-  const parser = new DOMParser()
-  const doc = parser.parseFromString(html, "text/html")
-  const rootDL = doc.querySelector("dl")
+import type { Bookmark, Group } from "./types";
 
-  const makeNode = (dt: Element): any => {
-    const h3 = dt.querySelector("h3")
-    if (h3) {
-      const title = h3.textContent || "Folder"
-      const dl = dt.querySelector("dl")
-      const children: any[] = []
+type ParsedBookmarks = {
+  title: string;
+  groups: Group[];
+};
 
-      if (dl) {
-        const dts = Array.from(dl.children).filter(
-          (n) => n.tagName.toLowerCase() === "dt"
-        )
-        for (const child of dts) {
-          const node = makeNode(child as Element)
-          if (node) children.push(node)
+function directChildrenByTag(element: Element, tagName: string) {
+  return Array.from(element.children).filter(
+    (node) => node.tagName.toLowerCase() === tagName.toLowerCase(),
+  );
+}
+
+export function parseBookmarksHtml(html: string): ParsedBookmarks {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, "text/html");
+  const rootDL = doc.querySelector("dl");
+
+  const collectGroups = (
+    list: Element,
+    trail: string[] = [],
+    includeLooseBookmarksGroup = trail.length === 0,
+  ): Group[] => {
+    const groups: Group[] = [];
+    const looseBookmarks: Bookmark[] = [];
+
+    for (const dt of directChildrenByTag(list, "dt")) {
+      const folder = dt.querySelector(":scope > h3");
+      if (folder) {
+        const title = folder.textContent?.trim() || "Folder";
+        const nestedDL = dt.querySelector(":scope > dl");
+        const bookmarks: Bookmark[] = [];
+        const nestedGroups = nestedDL ? collectGroups(nestedDL, [...trail, title], false) : [];
+
+        if (nestedDL) {
+          for (const nestedDT of directChildrenByTag(nestedDL, "dt")) {
+            const link = nestedDT.querySelector(":scope > a");
+            if (!link) {
+              continue;
+            }
+
+            bookmarks.push({
+              type: "bookmark",
+              title: link.textContent?.trim() || link.getAttribute("href") || "Link",
+              url: link.getAttribute("href") || "",
+            });
+          }
         }
+
+        groups.push({
+          type: "group",
+          title: [...trail, title].join(" / "),
+          bookmarks,
+        });
+        groups.push(...nestedGroups);
+        continue;
       }
 
-      return { type: "group", title, children }
-    }
+      const link = dt.querySelector(":scope > a");
+      if (!link) {
+        continue;
+      }
 
-    const a = dt.querySelector("a")
-    if (a) {
-      return {
+      looseBookmarks.push({
         type: "bookmark",
-        title: a.textContent || a.getAttribute("href") || "link",
-        url: a.getAttribute("href") || "",
-      }
+        title: link.textContent?.trim() || link.getAttribute("href") || "Link",
+        url: link.getAttribute("href") || "",
+      });
     }
 
-    return null
-  }
-
-  const groups: any[] = []
-  if (rootDL) {
-    const topDTs = Array.from(rootDL.children).filter(
-      (n) => n.tagName.toLowerCase() === "dt"
-    )
-    for (const dt of topDTs) {
-      const node = makeNode(dt as Element)
-      if (node) groups.push(node)
+    if (includeLooseBookmarksGroup && looseBookmarks.length > 0) {
+      groups.unshift({
+        type: "group",
+        title: trail.length > 0 ? `${trail.join(" / ")} / Links` : "Imported Links",
+        bookmarks: looseBookmarks,
+      });
     }
-  }
 
-  return { title: "Imported", groups }
+    return groups;
+  };
+
+  return {
+    title: "Imported",
+    groups: rootDL ? collectGroups(rootDL) : [],
+  };
 }

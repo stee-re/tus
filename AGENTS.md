@@ -78,7 +78,7 @@ type Bookmark = {
 type Group = {
   type: "group";
   title: string;
-  children: Array<Group | Bookmark>;
+  bookmarks: Array<Bookmark>;
 };
 
 type Page = {
@@ -106,9 +106,9 @@ Notes:
 ## Browser HTML Import
 
 - Accept Chrome & Firefox exported bookmarks HTML.
-- Parse `<DL><DT><H3>` nested structure.
-- Preserve folder hierarchy.
+- Parse `<DL><DT><H3>` nested structure and flatten it into page-level groups.
 - Preserve order.
+- Folder paths may be reflected in group titles.
 - Empty folders must remain visible.
 
 ## JSON Export
@@ -134,10 +134,10 @@ Invalid JSON should show friendly error message.
 ## Layout
 
 - Grid of cards.
+- Cards contain clickable tiles which are bookmarks
 - Column count configurable.
 - Responsive.
 - No collapsing groups (initially).
-- Nested groups render recursively.
 
 ## Search
 
@@ -150,9 +150,13 @@ Invalid JSON should show friendly error message.
 Search matches:
 
 - title
-- url
 
 Search is simple includes-based (fuzzy search can be added later).
+Search does not use autocomplete or a dropdown list
+When the search box is empty, all bookmarks are displayed
+Search filters the tiles/groups displayed
+If all tiles in a group are filtered out, the group is also hidden
+The "Esc" key, clears the search box
 
 ---
 
@@ -173,9 +177,12 @@ No clutter in header.
 
 # 7. Edit Mode (High Priority)
 
-Edit mode is the primary future development focus.
-
 When edit mode is enabled:
+
+- Page selectors and buttons are hidden
+- Title becomes page title (with edit & delete button beside it)
+
+For:
 
 - Pages
 - Groups
@@ -195,18 +202,17 @@ Edit mode must feel lightweight and not cluttered.
 
 ---
 
-# 8. Drag and Drop (Future Priority)
+# 8. Drag and Drop
 
 In Edit mode:
 
 It must be possible to drag and drop:
 
-- Pages
 - Groups
 - Bookmarks
 - Move bookmarks between groups
-- Move groups between groups
 - Reorder everything
+- Clear visual indicators for drop zones
 
 Recommended library:
 
@@ -216,7 +222,6 @@ Reason:
 
 - Modern
 - Lightweight
-- Works well with nested structures
 - Actively maintained
 
 Drag-and-drop should preserve structure and update arrays immutably.
@@ -257,15 +262,6 @@ Important:
 - Fully client-side
 
 Icon selector must appear in Edit mode.
-
----
-
-# 10. Dark Mode
-
-- Tailwind `darkMode: 'class'`
-- Persist selection in localStorage
-- Toggle via kebab menu
-- Smooth transition
 
 ---
 
@@ -326,8 +322,7 @@ These are optional and secondary.
 
 - Use structuredClone for immutability.
 - Keep components small.
-- Recursive components for groups.
-- Avoid prop drilling explosion (consider context only if needed).
+- Avoid prop drilling explosion (consider provider/context where needed).
 - Avoid premature abstraction.
 
 ---

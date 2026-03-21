@@ -1,8 +1,14 @@
-@import "tailwindcss";
-
-/* Optional custom layers */
 html,
 body,
 #root {
-  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
